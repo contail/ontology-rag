@@ -1,0 +1,9 @@
+What is Ontology?
+
+An ontology is a formal representation of knowledge as a set of concepts within a domain, and the relationships between those concepts.
+
+Types of Ontologies
+
+1. Domain Ontology: Represents concepts specific to a particular domain
+2. Upper Ontology: Describes general concepts that are the same across all domains
+3. Task Ontology: Describes concepts related to a specific task or activity

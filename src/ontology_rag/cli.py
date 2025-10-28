@@ -2,7 +2,6 @@
 
 import os
 from pathlib import Path
-from typing import Optional
 
 import typer
 from rich.console import Console
@@ -67,14 +66,14 @@ def add(file_path: str) -> None:
 
 
 @app.command()
-def query(question: str, top_k: int = 3, debug: bool = False) -> None:
+def query(question: str) -> None:
     """💬 Ask a question to the RAG system.
     
     Example:
         ontology-rag query "What is ontology?"
     """
     rag = get_rag_engine()
-    answer = rag.query(question, top_k=top_k, debug=debug)
+    answer = rag.query(question, top_k=3, debug=False)
     
     console.print("\n[bold cyan]Answer:[/bold cyan]")
     console.print(answer)
