@@ -43,6 +43,7 @@ chroma_db/
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+# notebooks/*.ipynb  # 노트북 파일 자체를 ignore하려면 주석 해제
 
 # OS
 .DS_Store
